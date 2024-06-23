@@ -1,0 +1,45 @@
+# TODO
+- [ ] Sidebar
+    - [ ] List of playlists
+        - [ ] Playlists have a title
+        - [ ] Playlist have a creator username
+        - [ ] Playlist has an image
+    - [ ] Search by playlist title
+    - [ ] Home button
+    - [ ] Search button
+    - [ ] Create a playlist
+---------------------------------------------------------
+- [ ] Bottom Bar
+    - [ ] Display Currently playing song
+        - [ ] Song album cover
+        - [ ] Song name
+        - [ ] Song artist
+        - [ ] Ability to add song to a playlist
+    - [ ] Song actions
+        - [ ] Display length of song and position in song
+        - [ ] Play / Pause button
+        - [ ] Forward & Backward buttons
+        - [ ] Shuffle button
+        - [ ] Loop button
+    - [ ] Volume Slider
+---------------------------------------------------------
+- [ ] Main Content (home view)
+    - [ ] Display most recently played albums / playlists
+        - [ ] Display album / playlist name
+        - [ ] Display album / playlist image
+        - [ ] Ability to filter by album or playlist
+    - [ ] Display a message to select playlist on sidebar
+---------------------------------------------------------
+- [ ] Main Content (Album / Playlist View)
+    - [ ] Info Section
+        - [ ] Display Cover photo
+        - [ ] Display Title
+        - [ ] Display created user
+        - [ ] Display amount of songs
+    - [ ] Actions
+        - [ ] Play Button
+        - [ ] Shuffle Button
+    - [ ] Contents
+        - [ ] Display contents in a table by title, album, and time added to playlist.
+        - [ ] Display in a numbered order
+        - [ ] Show album cover, song title, and artist name
