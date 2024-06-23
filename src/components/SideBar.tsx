@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { House, Search } from 'lucide-react'
 
 export default function SideBar() {
@@ -26,7 +26,6 @@ export function HomeAndSearch() {
 }
 
 export function PlaylistList() {
-
     return (
         <div className='text-white bg-zinc-900 rounded-lg h-4/5 flex flex-col gap-4 pl-4 pt-4 m-2 overflow-auto'>
             <Playlist />
@@ -34,14 +33,11 @@ export function PlaylistList() {
             <Playlist />
             <Playlist />
             <Playlist />
-
-
         </div>
     )
 }
 
 export function Playlist() {
-
     return (
         <div className='flex items-center gap-3'>
             <img src="src\assets\Placeholder.jpg" alt="palceholder" className='w-14 h-14 rounded' />
