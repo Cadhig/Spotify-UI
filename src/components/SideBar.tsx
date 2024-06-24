@@ -27,7 +27,7 @@ export function HomeAndSearch() {
 
 export function PlaylistList() {
     return (
-        <div className='text-white bg-zinc-900 rounded-lg h-full flex flex-col gap-4 pl-4 pt-4 overflow-auto m-2'>
+        <div className='text-white bg-zinc-900 rounded-lg h-full flex flex-col gap-4 pl-4 pt-4 overflow-auto mt-2 mr-2 ml-2'>
             <Playlist />
             <Playlist />
             <Playlist />

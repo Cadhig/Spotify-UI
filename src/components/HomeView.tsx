@@ -1,10 +1,11 @@
 import React from 'react'
 
-export default function SideBar() {
+
+export default function HomeView() {
 
     return (
-        <div className='bg-red-500 w-full h-full'>
-            <p>main</p>
+        <div className='bg-zinc-900 w-full rounded flex mt-2 mr-2 overflow-auto'>
+
         </div>
     )
 }
