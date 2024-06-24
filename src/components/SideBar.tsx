@@ -1,5 +1,5 @@
 
-import { House, Search } from 'lucide-react'
+import { House, Search, Library, Plus } from 'lucide-react'
 
 export default function SideBar() {
     return (
@@ -25,9 +25,25 @@ function HomeAndSearch() {
     )
 }
 
+function LibraryBar() {
+
+    return (
+        <div className='flex text-gray-400'>
+            <div className='flex gap-2 w-1/2'>
+                <Library />
+                <p>Your Library</p>
+            </div>
+            <div className='flex justify-end w-1/2 mr-4'>
+                <Plus />
+            </div>
+        </div>
+    )
+}
+
 function PlaylistList() {
     return (
         <div className='text-white bg-zinc-900 rounded-lg h-full flex flex-col gap-4 pl-4 pt-4 overflow-auto'>
+            <LibraryBar />
             <Playlist />
             <Playlist />
             <Playlist />
