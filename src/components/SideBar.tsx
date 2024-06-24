@@ -1,5 +1,6 @@
 
 import { House, Search, Library, Plus } from 'lucide-react'
+import { playlists, Playlists } from '../data'
 
 export default function SideBar() {
     return (
@@ -12,7 +13,7 @@ export default function SideBar() {
 
 function HomeAndSearch() {
     return (
-        <div className='text-gray-300 font-bold bg-zinc-900 rounded-lg h-36 flex flex-col justify-evenly pl-4'>
+        <div className='text-white/90 font-bold bg-zinc-900 rounded-lg h-36 flex flex-col justify-evenly pl-4'>
             <div className='flex flex-row items-center gap-3 hover:text-white cursor-pointer'>
                 <House size={36} />
                 <p>Home</p>
@@ -28,12 +29,12 @@ function HomeAndSearch() {
 function LibraryBar() {
 
     return (
-        <div className='flex text-gray-400'>
+        <div className='flex text-white/50'>
             <div className='flex gap-2 w-1/2'>
                 <Library />
                 <p>Your Library</p>
             </div>
-            <div className='flex justify-end w-1/2 mr-4'>
+            <div className='flex justify-end w-1/2'>
                 <Plus />
             </div>
         </div>
@@ -42,24 +43,22 @@ function LibraryBar() {
 
 function PlaylistList() {
     return (
-        <div className='text-white bg-zinc-900 rounded-lg h-full flex flex-col gap-1 pl-4 pt-4 overflow-auto'>
+        <div className='text-white bg-zinc-900 rounded-lg h-full flex flex-col gap-1 p-4 overflow-auto'>
             <LibraryBar />
-            <Playlist />
-            <Playlist />
-            <Playlist />
-            <Playlist />
-            <Playlist />
+            {playlists.map((playlistItem, index) => {
+                return <Playlist key={index} image={playlistItem.image} title={playlistItem.title} user={playlistItem.user} />
+            })}
         </div>
     )
 }
 
-function Playlist() {
+function Playlist(props: Playlists) {
     return (
-        <div className='flex items-center gap-3 hover:bg-zinc-800 rounded p-2 cursor-pointer'>
-            <img src="src\assets\Placeholder.jpg" alt="palceholder" className='w-14 h-14 rounded' />
+        <div className='flex items-center gap-3 hover:bg-white/10 rounded p-2 cursor-pointer'>
+            <img src={props.image} alt="palceholder" className='w-14 h-14 rounded' />
             <div className='flex flex-col'>
-                <p className='font-bold'>Playlist Title</p>
-                <p className='text-gray-400'>User</p>
+                <p className='font-bold'>{props.title}</p>
+                <p className='text-white/50'>{props.user}</p>
             </div>
         </div>
     )

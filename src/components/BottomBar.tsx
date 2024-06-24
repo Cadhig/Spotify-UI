@@ -15,15 +15,8 @@ export default function BottomBar() {
 
 function PlayorPauseButton() {
     const [paused, setPaused] = React.useState(true)
-    let playState;
-
-    if (paused === true) {
-        playState = <CirclePlay size={48} />
-    } else {
-        playState = <CirclePause size={48} />
-    }
     return (
-        <button onClick={() => setPaused(!paused)}>{playState}</button>
+        <button onClick={() => setPaused(!paused)}>{paused === true ? <CirclePlay size={48} /> : <CirclePause size={48} />}</button>
     )
 }
 
@@ -38,7 +31,7 @@ function MusicActions() {
                 <SkipForward size={32} />
                 <Repeat size={16} />
             </div>
-            <div id='MockBar' className='bg-white w-1/2 h-1'>
+            <div id='MockBar' className='bg-white/50 w-1/2 h-1 rounded-full'>
             </div>
         </div>
     )
@@ -51,7 +44,7 @@ function CurrentSong() {
             <img src="src\assets\Placeholder.jpg" alt="" className='w-16 h-14' />
             <div className='ml-3 text-white'>
                 <p>Song Name</p>
-                <p className='text-gray-500'>Artist</p>
+                <p className='text-white/50'>Artist</p>
             </div>
         </div>
     )
@@ -62,7 +55,7 @@ function VolumeBar() {
     return (
         <div className='text-white flex items-center gap-3 w-1/4 justify-end'>
             <Volume2 />
-            <div id='MockVol' className='bg-white w-28 h-1'>
+            <div id='MockVol' className='bg-white/50 w-28 h-1 rounded-full'>
             </div>
         </div>
     )
