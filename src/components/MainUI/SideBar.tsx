@@ -1,22 +1,24 @@
 
+import React from 'react'
 import { House, Search, Library, Plus } from 'lucide-react'
 import { playlists, Playlists } from '../../data'
+import HomeView from './HomeView'
 
-export default function SideBar() {
+export default function SideBar(props: any) {
     return (
         <div className='bg-black w-1/6 h-full flex flex-col gap-2'>
-            <HomeAndSearch />
-            <PlaylistList />
+            <HomeAndSearch setView={props.setView} />
+            <PlaylistList setView={props.setView} />
         </div>
     )
 }
 
-function HomeAndSearch() {
+function HomeAndSearch(props: any) {
     return (
         <div className='text-white/90 font-bold bg-zinc-900 rounded-lg h-36 flex flex-col justify-evenly pl-4'>
             <div className='flex flex-row items-center gap-3 hover:text-white cursor-pointer'>
                 <House size={36} />
-                <p>Home</p>
+                <button onClick={() => props.setView('Home')}>Home</button>
             </div>
             <div className='flex flex-row items-center gap-3 hover:text-white cursor-pointer'>
                 <Search size={36} />
@@ -41,20 +43,20 @@ function LibraryBar() {
     )
 }
 
-function PlaylistList() {
+function PlaylistList(props: any) {
     return (
         <div className='text-white bg-zinc-900 rounded-lg h-full flex flex-col gap-1 p-4 overflow-auto'>
             <LibraryBar />
             {playlists.map((playlistItem, index) => {
-                return <Playlist key={index} image={playlistItem.image} title={playlistItem.title} user={playlistItem.user} />
+                return <Playlist onClick={() => props.setView('Album')} key={index} image={playlistItem.image} title={playlistItem.title} user={playlistItem.user} />
             })}
         </div>
     )
 }
 
-function Playlist(props: Playlists) {
+function Playlist(props: Playlists & { onClick: () => any }) {
     return (
-        <div className='flex items-center gap-3 hover:bg-white/10 rounded p-2 cursor-pointer'>
+        <div className='flex items-center gap-3 hover:bg-white/10 rounded p-2 cursor-pointer' onClick={props.onClick}>
             <img src={props.image} alt="palceholder" className='w-14 h-14 rounded' />
             <div className='flex flex-col'>
                 <p className='font-bold'>{props.title}</p>
