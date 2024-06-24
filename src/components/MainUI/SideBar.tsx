@@ -1,6 +1,6 @@
 
 import { House, Search, Library, Plus } from 'lucide-react'
-import { playlists, Playlists } from '../data'
+import { playlists, Playlists } from '../../data'
 
 export default function SideBar() {
     return (

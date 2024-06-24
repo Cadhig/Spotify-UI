@@ -1,6 +1,6 @@
-import { Album } from "../data"
+import { Album } from "../../data"
 
-export default function Carousel(props: any) {
+export default function AlbumCarousel(props: any) {
 
     return (
         <div className='flex flex-col gap-3'>

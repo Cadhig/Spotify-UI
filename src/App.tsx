@@ -1,7 +1,7 @@
-import SideBar from './components/SideBar'
-import BottomBar from './components/BottomBar'
-import HomeView from './components/HomeView'
-import AlbumView from './components/AlbumView'
+import SideBar from './components/MainUI/SideBar'
+import BottomBar from './components/MainUI/BottomBar'
+import HomeView from './components/MainUI/HomeView'
+import AlbumView from './components/MainUI/AlbumView'
 function App() {
 
 

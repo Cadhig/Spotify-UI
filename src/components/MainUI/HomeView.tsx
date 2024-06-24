@@ -1,8 +1,7 @@
 import React from 'react'
-import { CircleChevronLeft, CircleChevronRight } from 'lucide-react'
-import { RecentlyPlayedItem, recentlyPlayedList, topAlbums } from '../data'
-import Carousel from './Carousel'
-
+import { RecentlyPlayedItem, recentlyPlayedList, topAlbums } from '../../data'
+import AlbumCarousel from '../Interactivity/Carousel'
+import PageSwitchButtons from '../Buttons/PageSwitchButtons'
 
 export default function HomeView() {
 
@@ -12,16 +11,6 @@ export default function HomeView() {
             <AlbumOrPlaylistButtons />
             <RecentlyPlayed />
             <TopAlbumsCarousel />
-        </div>
-    )
-}
-
-function PageSwitchButtons() {
-
-    return (
-        <div className='text-white flex gap-2 items-center h-11'>
-            <CircleChevronLeft size={28} />
-            <CircleChevronRight size={28} />
         </div>
     )
 }
@@ -60,7 +49,7 @@ function RecentlyPlayedItems(props: RecentlyPlayedItem) {
 
 function TopAlbumsCarousel() {
     return (
-        <Carousel header={'Hot Today'} contents={topAlbums} />
+        <AlbumCarousel header={'Hot Today'} contents={topAlbums} />
 
     )
 }
