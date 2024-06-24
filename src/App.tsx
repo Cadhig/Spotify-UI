@@ -7,7 +7,7 @@ function App() {
 
   return (
     <div className='flex flex-col h-full bg-black'>
-      <div className='flex flex-row h-full gap-2 m-2'>
+      <div className='flex flex-row h-full gap-2 m-2 overflow-auto'>
         <SideBar></SideBar>
         <HomeView></HomeView>
       </div>

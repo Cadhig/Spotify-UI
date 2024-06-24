@@ -1,16 +1,18 @@
 import React from 'react'
-import { RecentlyPlayedItem, recentlyPlayedList, topAlbums } from '../../data'
-import AlbumCarousel from '../Interactivity/Carousel'
+import { RecentlyPlayedItem, recentlyPlayedList, topAlbums, artists } from '../../data'
+import AlbumCarousel from '../Interactivity/AlbumCarousel'
 import PageSwitchButtons from '../Buttons/PageSwitchButtons'
+import ArtistCarousel from '../Interactivity/ArtistCarousel'
 
 export default function HomeView() {
 
     return (
-        <div className="size-full bg-zinc-900 rounded-md flex flex-col gap-4 overflow-hidden p-4">
+        <div className="size-full bg-zinc-900 rounded-md flex flex-col gap-4 overflow-auto p-4">
             <PageSwitchButtons />
             <AlbumOrPlaylistButtons />
             <RecentlyPlayed />
             <TopAlbumsCarousel />
+            <TopArtistsCarousel />
         </div>
     )
 }
@@ -50,6 +52,13 @@ function RecentlyPlayedItems(props: RecentlyPlayedItem) {
 function TopAlbumsCarousel() {
     return (
         <AlbumCarousel header={'Hot Today'} contents={topAlbums} />
+
+    )
+}
+
+function TopArtistsCarousel() {
+    return (
+        <ArtistCarousel header={'Top Artists in the USA'} contents={artists} />
 
     )
 }
