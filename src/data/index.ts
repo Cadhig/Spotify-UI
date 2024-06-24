@@ -1,9 +1,9 @@
-export interface TopAlbum {
+export interface Album {
     image: string,
     album: string,
     artist: string,
 }
-export const topAlbums: TopAlbum[] = [{
+export const topAlbums: Album[] = [{
     image: `src\\assets\\Placeholder.jpg`,
     album: 'Album Name',
     artist: 'Artist',

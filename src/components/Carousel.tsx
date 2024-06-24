@@ -1,4 +1,4 @@
-import { TopAlbum } from "../data"
+import { Album } from "../data"
 
 export default function Carousel(props: any) {
 
@@ -7,14 +7,14 @@ export default function Carousel(props: any) {
             <h2 className='text-white font-bold text-2xl'>{props.header}</h2>
             <div className='flex overflow-auto gap-4'>
                 {props.contents.map((props, index) => {
-                    return <TopAlbums key={index} {...props} />
+                    return <Albums key={index} {...props} />
                 })}
             </div>
         </div>
     )
 }
 
-function TopAlbums(props: TopAlbum) {
+function Albums(props: Album) {
 
     return (
         <div className='bg-white/5 rounded flex flex-col min-w-52 min-h-60 items-center justify-center p-4 mb-2 hover:bg-white/10 cursor-pointer'>
