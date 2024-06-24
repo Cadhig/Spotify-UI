@@ -3,7 +3,7 @@ import { House, Search } from 'lucide-react'
 
 export default function SideBar() {
     return (
-        <div className='bg-black w-1/6 h-full'>
+        <div className='bg-black w-1/6 h-full flex flex-col'>
             <HomeAndSearch />
             <PlaylistList />
         </div>
@@ -12,7 +12,7 @@ export default function SideBar() {
 
 export function HomeAndSearch() {
     return (
-        <div className='text-gray-300 font-bold bg-zinc-900 rounded-lg h-36 flex flex-col justify-evenly pl-4 m-2'>
+        <div className='text-gray-300 font-bold bg-zinc-900 rounded-lg h-36 flex flex-col justify-evenly pl-4 mt-2 mr-2 ml-2'>
             <div className='flex flex-row items-center gap-3 hover:text-white cursor-pointer'>
                 <House size={36} />
                 <p>Home</p>
@@ -27,7 +27,7 @@ export function HomeAndSearch() {
 
 export function PlaylistList() {
     return (
-        <div className='text-white bg-zinc-900 rounded-lg h-4/5 flex flex-col gap-4 pl-4 pt-4 m-2 overflow-auto'>
+        <div className='text-white bg-zinc-900 rounded-lg h-full flex flex-col gap-4 pl-4 pt-4 overflow-auto m-2'>
             <Playlist />
             <Playlist />
             <Playlist />
