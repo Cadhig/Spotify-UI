@@ -13,7 +13,7 @@ export default function BottomBar() {
     )
 }
 
-export function PlayorPauseButton() {
+function PlayorPauseButton() {
     const [paused, setPaused] = React.useState(true)
     let playState;
 
@@ -23,17 +23,11 @@ export function PlayorPauseButton() {
         playState = <CirclePause size={48} />
     }
     return (
-        <button onClick={() => {
-            if (paused === true) {
-                setPaused(false)
-            } else {
-                setPaused(true)
-            }
-        }}>{playState}</button>
+        <button onClick={() => setPaused(!paused)}>{playState}</button>
     )
 }
 
-export function MusicActions() {
+function MusicActions() {
 
     return (
         <div className='w-1/2 flex flex-col justify-center items-center gap-1 h-full text-lg'>
@@ -50,7 +44,7 @@ export function MusicActions() {
     )
 }
 
-export function CurrentSong() {
+function CurrentSong() {
 
     return (
         <div className='flex justify-start items-center w-1/4'>
@@ -63,7 +57,7 @@ export function CurrentSong() {
     )
 }
 
-export function VolumeBar() {
+function VolumeBar() {
 
     return (
         <div className='text-white flex items-center gap-3 w-1/4 justify-end'>

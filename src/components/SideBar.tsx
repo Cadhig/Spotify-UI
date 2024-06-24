@@ -10,7 +10,7 @@ export default function SideBar() {
     )
 }
 
-export function HomeAndSearch() {
+function HomeAndSearch() {
     return (
         <div className='text-gray-300 font-bold bg-zinc-900 rounded-lg h-36 flex flex-col justify-evenly pl-4'>
             <div className='flex flex-row items-center gap-3 hover:text-white cursor-pointer'>
@@ -25,7 +25,7 @@ export function HomeAndSearch() {
     )
 }
 
-export function PlaylistList() {
+function PlaylistList() {
     return (
         <div className='text-white bg-zinc-900 rounded-lg h-full flex flex-col gap-4 pl-4 pt-4 overflow-auto'>
             <Playlist />
@@ -37,7 +37,7 @@ export function PlaylistList() {
     )
 }
 
-export function Playlist() {
+function Playlist() {
     return (
         <div className='flex items-center gap-3'>
             <img src="src\assets\Placeholder.jpg" alt="palceholder" className='w-14 h-14 rounded' />
