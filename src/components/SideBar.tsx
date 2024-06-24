@@ -42,7 +42,7 @@ function LibraryBar() {
 
 function PlaylistList() {
     return (
-        <div className='text-white bg-zinc-900 rounded-lg h-full flex flex-col gap-4 pl-4 pt-4 overflow-auto'>
+        <div className='text-white bg-zinc-900 rounded-lg h-full flex flex-col gap-1 pl-4 pt-4 overflow-auto'>
             <LibraryBar />
             <Playlist />
             <Playlist />
@@ -55,7 +55,7 @@ function PlaylistList() {
 
 function Playlist() {
     return (
-        <div className='flex items-center gap-3'>
+        <div className='flex items-center gap-3 hover:bg-zinc-800 rounded p-2 cursor-pointer'>
             <img src="src\assets\Placeholder.jpg" alt="palceholder" className='w-14 h-14 rounded' />
             <div className='flex flex-col'>
                 <p className='font-bold'>Playlist Title</p>

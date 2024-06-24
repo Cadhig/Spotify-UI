@@ -28,8 +28,8 @@ function AlbumOrPlaylistButtons() {
 
     return (
         <div className='text-gray-200 flex gap-2 ml-4'>
-            <button className='rounded-full bg-zinc-800 w-20 hover:bg-zinc-700'>Albums</button>
-            <button className='rounded-full bg-zinc-800 w-20 hover:bg-zinc-700'>Playlists</button>
+            <button className='rounded-full bg-zinc-800 w-20 hover:bg-zinc-700 cursor-pointer'>Albums</button>
+            <button className='rounded-full bg-zinc-800 w-20 hover:bg-zinc-700 cursor-pointer'>Playlists</button>
         </div>
     )
 }
@@ -53,7 +53,7 @@ function RecentlyPlayed() {
 function RecentlyPlayedItems() {
 
     return (
-        <div className='bg-zinc-800 rounded h-14 flex p-1 items-center gap-2 text-gray-200 hover:bg-zinc-700'>
+        <div className='bg-zinc-800 rounded h-14 flex p-1 items-center gap-2 text-gray-200 hover:bg-zinc-700 cursor-pointer'>
             <img src="src\assets\Placeholder.jpg" alt="placeholder" className='w-12 h-12' />
             <p>Playlist / Album</p>
         </div>
@@ -85,7 +85,7 @@ function TopAlbumsCarousel() {
 function TopAlbums() {
 
     return (
-        <div className='bg-zinc-800 rounded flex flex-col min-w-52 min-h-60 items-center justify-center p-4 mb-2 hover:bg-zinc-700'>
+        <div className='bg-zinc-800 rounded flex flex-col min-w-52 min-h-60 items-center justify-center p-4 mb-2 hover:bg-zinc-700 cursor-pointer'>
             <img src="src\assets\Placeholder.jpg" alt="placeholder" className='w-full h-full' />
             <div className='text-white w-full'>
                 <p className='font-bold'>Album Name</p>
