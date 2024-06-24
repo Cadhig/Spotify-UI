@@ -6,8 +6,8 @@ function App() {
 
 
   return (
-    <div className='flex flex-col h-full bg-black gap-1'>
-      <div className='flex flex-row w-full h-full'>
+    <div className='flex flex-col h-full bg-black'>
+      <div className='flex flex-row h-full gap-2 m-2'>
         <SideBar></SideBar>
         <HomeView></HomeView>
       </div>
