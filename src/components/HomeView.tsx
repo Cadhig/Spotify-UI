@@ -1,6 +1,7 @@
 import React from 'react'
 import { CircleChevronLeft, CircleChevronRight } from 'lucide-react'
-import { RecentlyPlayedItem, TopAlbum, recentlyPlayedList, topAlbums } from '../data'
+import { RecentlyPlayedItem, recentlyPlayedList, topAlbums } from '../data'
+import Carousel from './Carousel'
 
 
 export default function HomeView() {
@@ -58,29 +59,8 @@ function RecentlyPlayedItems(props: RecentlyPlayedItem) {
 
 
 function TopAlbumsCarousel() {
-
     return (
-        <div className='flex flex-col gap-3'>
-            <h2 className='text-white font-bold text-2xl'> Hot Today</h2>
-            <div className='flex overflow-auto gap-4'>
-                {topAlbums.map((props, index) => {
-                    return <TopAlbums key={index} {...props} />
-                })}
-            </div>
-        </div>
-    )
-}
+        <Carousel header={'Hot Today'} contents={topAlbums} />
 
-
-function TopAlbums(props: TopAlbum) {
-
-    return (
-        <div className='bg-white/5 rounded flex flex-col min-w-52 min-h-60 items-center justify-center p-4 mb-2 hover:bg-white/10 cursor-pointer'>
-            <img src={props.image} alt="placeholder" className='w-full h-full' />
-            <div className='text-white w-full'>
-                <p className='font-bold'>{props.album}</p>
-                <p className='text-white/50'>{props.artist}</p>
-            </div>
-        </div>
     )
 }
