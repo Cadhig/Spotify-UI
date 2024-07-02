@@ -8,6 +8,6 @@ export default function Main(props: any) {
             <HomeView setView={props.setView} />
         )
     } else {
-        return <AlbumView />
+        return <AlbumView setView={props.setView} />
     }
 }
