@@ -32,7 +32,13 @@ function MusicActions() {
                 <SkipForward size={32} className='text-white/50 cursor-pointer hover:text-white/80' />
                 <Repeat size={16} className='text-white/50 cursor-pointer hover:text-white/80' />
             </div>
-            <div id='MockBar' className='bg-white/50 w-1/2 h-1 rounded-full'>
+            <div className='h-1 w-full flex items-center justify-center text-white/50 text-xs gap-2'>
+                <p>2:54</p>
+                <div className="w-1/2 h-1 rounded bg-white/30">
+                    <div id='MockVol' className='bg-white/80 w-3/4 h-1 rounded-full'>
+                    </div>
+                </div>
+                <p>3:29</p>
             </div>
         </div>
     )
@@ -56,7 +62,9 @@ function VolumeBar() {
     return (
         <div className='text-white flex items-center gap-3 w-1/4 justify-end'>
             <Volume2 />
-            <div id='MockVol' className='bg-white/50 w-28 h-1 rounded-full'>
+            <div className="w-28 h-1 rounded bg-white/30">
+                <div id='MockVol' className='bg-white/80 w-16 h-1 rounded-full'>
+                </div>
             </div>
         </div>
     )
