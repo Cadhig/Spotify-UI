@@ -1,3 +1,33 @@
+import TheTorturedPoetsDepartment from '../assets/TheTorturedPoetsDepartment.jpg'
+import WeDontTrustYou from '../assets/WeDontTrustYou.jpg'
+import Guts from '../assets/Guts.jpg'
+import HardstonePsycho from '../assets/HardstonePsycho.jpg'
+import NewWorldDepression from '../assets/NewWorldDepression.jpg'
+import Nostalgia from '../assets/Nostalgia.jpg'
+import OneThingAtATime from '../assets/OneThingAtATime.jpg'
+import PostMalone from '../assets/PostMalone.jpg'
+import SabrinaCarpenter from '../assets/SabrinaCarpenter.jpg'
+import Sza from '../assets/Sza.jpg'
+import TaylorSwift from '../assets/TaylorSwift.jpg'
+import TheNewAbnormal from '../assets/TheNewAbnormal.jpg'
+import ThePlaceIFeelSafest from '../assets/ThePlaceIFeelSafest.jpg'
+import ZachBryan from '../assets/ZachBryan.jpg'
+import ZachBryanP from '../assets/ZachBryanP.jpg'
+import HitMeHardAndSoft from '../assets/HitMeHardAndSoft.jpg'
+import HowToSurviveAFuneral from '../assets/HowToSurviveAFuneral.jpg'
+import DemonDays from '../assets/DemonDays.jpg'
+import Jaded from '../assets/Jaded.jpg'
+import Anya from '../assets/Anya.jpg'
+import Metal from '../assets/MetalPlaylist.jpg'
+import Acoustic from '../assets/Acoustic.jpg'
+import Lofi from '../assets/Lofi.jpg'
+import Got from '../assets/Got.jpg'
+import Bmth from '../assets/Bmth.jpg'
+import LukeCombs from '../assets/LukeCombs.jpg'
+import MorganWallen from '../assets/MorganWallen.jpg'
+import JellyRoll from '../assets/JellyRoll.jpg'
+import KendrickLamar from '../assets/KendrickLamar.jpg'
+import BillieEilish from '../assets/BillieEilish.jpg'
 export interface Album {
     image: string,
     album: string,
@@ -5,42 +35,42 @@ export interface Album {
 }
 export const topAlbums: Album[] = [
     {
-        image: '\src\\assets\\TheTorturedPoetsDepartment.jpg',
+        image: TheTorturedPoetsDepartment,
         album: "The Tortured Poets Department",
         artist: "Taylor Swift"
     },
     {
-        image: '\src\\assets\\WeDontTrustYou.jpg',
+        image: WeDontTrustYou,
         album: "We Dont Trust You",
         artist: "Future & Metro Boomin"
     },
     {
-        image: 'src\\assets\\Guts.jpg',
+        image: Guts,
         album: 'Guts',
         artist: "Olivia Rodrigo"
     },
     {
-        image: 'src\\assets\\HardstonePsycho.jpg',
+        image: HardstonePsycho,
         album: "Hardstone Psycho",
         artist: "Don Toliver"
     },
     {
-        image: 'src\\assets\\HitMeHardAndSoft.jpg',
+        image: HitMeHardAndSoft,
         album: "Hit Me Hard and Soft",
         artist: "Billie Eilish"
     },
     {
-        image: 'src\\assets\\NewWorldDepression.jpg',
+        image: NewWorldDepression,
         album: 'New World Depression',
         artist: '$uicideboy$'
     },
     {
-        image: 'src\\assets\\OneThingAtATime.jpg',
+        image: OneThingAtATime,
         album: "One Thing at a Time",
         artist: "Morgan Wallen"
     },
     {
-        image: 'src\\assets\\ZachBryan.jpg',
+        image: ZachBryan,
         album: "Zach Bryan",
         artist: "Zach Bryan"
     }
@@ -52,35 +82,35 @@ export interface RecentlyPlayedItem {
 }
 
 export const recentlyPlayedList: RecentlyPlayedItem[] = [{
-    image: `src\\assets\\WeDontTrustYou.jpg`,
+    image: WeDontTrustYou,
     title: 'We Dont Trust You'
 },
 {
-    image: `src\\assets\\TheNewAbnormal.jpg`,
+    image: TheNewAbnormal,
     title: 'The New Abnormal'
 },
 {
-    image: `src\\assets\\DemonDays.jpg`,
+    image: DemonDays,
     title: 'Demon Days'
 },
 {
-    image: `src\\assets\\Jaded.jpg`,
+    image: Jaded,
     title: 'Jaded'
 },
 {
-    image: `src\\assets\\Anya.jpg`,
+    image: Anya,
     title: 'Anime Openings'
 },
 {
-    image: `src\\assets\\MetalPlaylist.jpg`,
+    image: Metal,
     title: 'Only Metal'
 },
 {
-    image: `src\\assets\\HowToSurviveAFuneral.jpg`,
+    image: HowToSurviveAFuneral,
     title: 'How To Survive a Funeral'
 },
 {
-    image: `src\\assets\\ThePlaceIFeelSafest.jpg`,
+    image: ThePlaceIFeelSafest,
     title: 'The Place I Feel Safest'
 },
 ]
@@ -92,37 +122,37 @@ export interface Playlists {
 }
 
 export const playlists: Playlists[] = [{
-    image: `src\\assets\\Anya.jpg`,
+    image: Anya,
     title: 'Anime Openings',
     user: 'cadhig'
 },
 {
-    image: `src\\assets\\Acoustic.jpg`,
+    image: Acoustic,
     title: 'Acoustic Chill',
     user: 'guitarguy'
 },
 {
-    image: `src\\assets\\MetalPlaylist.jpg`,
+    image: Metal,
     title: 'Only Metal',
     user: 'cadhig'
 },
 {
-    image: `src\\assets\\Lofi.jpg`,
+    image: Lofi,
     title: 'Lofi Beats',
     user: 'lofigirl'
 },
 {
-    image: `src\\assets\\Nostalgia.jpg`,
+    image: Nostalgia,
     title: '2000s Nostalgia',
     user: 'cadhig'
 },
 {
-    image: `src\\assets\\Got.jpg`,
+    image: Got,
     title: 'GOT Soundtrack',
     user: 'jonsnow'
 },
 {
-    image: `src\\assets\\Bmth.jpg`,
+    image: Bmth,
     title: 'BMTH ONLY!',
     user: 'cadhig'
 },
@@ -135,43 +165,43 @@ export interface Artist {
 
 export const artists: Artist[] = [
     {
-        image: `src\\assets\\TaylorSwift.jpg`,
+        image: TaylorSwift,
         name: 'Taylor Swift'
     },
     {
-        image: `src\\assets\\LukeCombs.jpg`,
+        image: LukeCombs,
         name: 'Luke Combs'
     },
     {
-        image: `src\\assets\\MorganWallen.jpg`,
+        image: MorganWallen,
         name: 'Morgan Wallen'
     },
     {
-        image: `src\\assets\\BillieEilish.jpg`,
+        image: BillieEilish,
         name: 'Billie Eilish'
     },
     {
-        image: `src\\assets\\SabrinaCarpenter.jpg`,
+        image: SabrinaCarpenter,
         name: 'Sabrina Carpenter'
     },
     {
-        image: `src\\assets\\KendrickLamar.jpg`,
+        image: KendrickLamar,
         name: 'Kendrick Lamar'
     },
     {
-        image: `src\\assets\\ZachBryanP.jpg`,
+        image: ZachBryanP,
         name: 'Zach Bryan'
     },
     {
-        image: `src\\assets\\PostMalone.jpg`,
+        image: PostMalone,
         name: 'Post Malone'
     },
     {
-        image: `src\\assets\\Sza.jpg`,
+        image: Sza,
         name: 'Sza'
     },
     {
-        image: `src\\assets\\JellyRoll.jpg`,
+        image: JellyRoll,
         name: 'Jelly Roll'
     },
 ]
