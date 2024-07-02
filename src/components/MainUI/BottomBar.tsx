@@ -48,10 +48,10 @@ function CurrentSong() {
 
     return (
         <div className='flex justify-start items-center w-1/4'>
-            <img src={TheDeathOfPeaceOfMind} alt="" className='w-16 h-14' />
-            <div className='ml-3 text-white'>
-                <p>Like a Villain</p>
-                <p className='text-white/50'>Bad Omens</p>
+            <img src={TheDeathOfPeaceOfMind} alt="" className='w-16 h-14 cursor-pointer' />
+            <div className='ml-3 text-white/90 hover:text-white'>
+                <p className='cursor-pointer'>Like a Villain</p>
+                <p className='text-white/50 hover:underline hover:text-white/80 cursor-pointer'>Bad Omens</p>
             </div>
         </div>
     )
@@ -61,8 +61,8 @@ function VolumeBar() {
 
     return (
         <div className='text-white flex items-center gap-3 w-1/4 justify-end'>
-            <Volume2 />
-            <div className="w-28 h-1 rounded bg-white/30">
+            <Volume2 className='cursor-pointer text-white/70 hover:text-white' />
+            <div className="w-28 h-1 rounded bg-white/30 cursor-pointer">
                 <div id='MockVol' className='bg-white/80 w-16 h-1 rounded-full hover:bg-green-700'>
                 </div>
             </div>
