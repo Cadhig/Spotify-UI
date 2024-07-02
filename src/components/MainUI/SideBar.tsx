@@ -1,8 +1,9 @@
 
 import { House, Search, Library, Plus } from 'lucide-react'
 import { playlists, Playlists } from '../../data'
+import { ViewChangable } from '../../App'
 
-export default function SideBar(props: any) {
+export default function SideBar(props: ViewChangable) {
     return (
         <div className='bg-black w-1/6 h-full flex flex-col gap-2'>
             <HomeAndSearch setView={props.setView} />
@@ -11,7 +12,7 @@ export default function SideBar(props: any) {
     )
 }
 
-function HomeAndSearch(props: any) {
+function HomeAndSearch(props: ViewChangable) {
     return (
         <div className='text-white/50 font-bold bg-zinc-900 rounded-lg h-36 flex flex-col justify-evenly pl-4'>
             <div className='flex flex-row items-center gap-3 hover:text-white cursor-pointer' onClick={() => props.setView('Home')}>
@@ -41,7 +42,7 @@ function LibraryBar() {
     )
 }
 
-function PlaylistList(props: any) {
+function PlaylistList(props: ViewChangable) {
     return (
         <div className='text-white bg-zinc-900 rounded-lg h-full flex flex-col gap-1 p-4 overflow-auto'>
             <LibraryBar />
