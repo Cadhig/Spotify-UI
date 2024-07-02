@@ -87,56 +87,84 @@ export const topAlbums: Album[] = [
     }
 ]
 
-export const topSongs: Album[] = [
+export interface Songs {
+    image: string,
+    album: string,
+    artist: string,
+    number: number,
+    dateAdded: string,
+}
+
+export const topSongs: Songs[] = [
     {
         image: IHadSomeHelp,
         album: "I Had Some Help",
-        artist: "Post Malone feat. Morgan Wallen"
+        artist: "Post Malone feat. Morgan Wallen",
+        number: 1,
+        dateAdded: 'Jun 2, 2024'
     },
     {
         image: ABarSong,
         album: "A Bar Song (Tipsy)",
-        artist: "Shaboozey"
+        artist: "Shaboozey",
+        number: 2,
+        dateAdded: 'Jun 2, 2024'
     },
     {
         image: NotLikeUs,
         album: 'Not Like Us',
-        artist: "Kendrick Lamar"
+        artist: "Kendrick Lamar",
+        number: 3,
+        dateAdded: 'Jun 2, 2024'
     },
     {
         image: Espresso,
         album: "Espresso",
-        artist: "Sabrina Carpenter"
+        artist: "Sabrina Carpenter",
+        number: 4,
+        dateAdded: 'Jun 2, 2024'
     },
     {
         image: Please,
         album: "Please Please Please",
-        artist: "Sabrina Carpenter"
+        artist: "Sabrina Carpenter",
+        number: 5,
+        dateAdded: 'Jun 2, 2024'
     },
     {
         image: MillionDollarBaby,
         album: 'Million Dollar Baby',
-        artist: 'Tommy Richman'
+        artist: 'Tommy Richman',
+        number: 6,
+        dateAdded: 'Jun 2, 2024'
     },
     {
         image: TooSweet,
         album: "Too Sweet",
-        artist: "Hozier"
+        artist: "Hozier",
+        number: 7,
+        dateAdded: 'Aug 13, 2024'
     },
     {
         image: BeautifulThings,
         album: "Beautiful Things",
-        artist: "Benson Boone"
+        artist: "Benson Boone",
+        number: 8,
+        dateAdded: 'Aug 13, 2024'
     },
     {
         image: LoseControl,
         album: "Lose Control",
-        artist: "Teddy Swims"
+        artist: "Teddy Swims",
+        number: 9,
+        dateAdded: 'Aug 21, 2024'
     },
     {
         image: BirdsOfAFeather,
         album: "Birds Of A Feather",
-        artist: "Billie Eilish"
+        artist: "Billie Eilish",
+        number: 10,
+        dateAdded: 'Sep 7, 2024'
     }
 ]
 

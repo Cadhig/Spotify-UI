@@ -14,7 +14,7 @@ export default function BottomBar() {
     )
 }
 
-function PlayorPauseButton() {
+export function PlayorPauseButton() {
     const [paused, setPaused] = React.useState(true)
     return (
         <button onClick={() => setPaused(!paused)}>{paused === true ? <CirclePlay size={48} className='text-white/70 cursor-pointer hover:text-white/80' /> : <CirclePause size={48} className='text-white/70 cursor-pointer hover:text-white/80' />}</button>
