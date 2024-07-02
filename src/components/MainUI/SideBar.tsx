@@ -31,10 +31,10 @@ function LibraryBar() {
     return (
         <div className='flex text-white/50'>
             <div className='flex gap-2 w-full'>
-                <Library />
-                <p className='w-full'>Your Library</p>
+                <Library className='cursor-pointer' />
+                <p className=' cursor-pointer'>Your Library</p>
             </div>
-            <div className='flex justify-end w-1/2'>
+            <div className='flex justify-end w-1/2 cursor-pointer'>
                 <Plus />
             </div>
         </div>
@@ -57,8 +57,8 @@ function Playlist(props: Playlists & { onClick: () => any }) {
         <div className='flex items-center gap-3 hover:bg-white/10 rounded p-2 cursor-pointer' onClick={props.onClick}>
             <img src={props.image} alt="palceholder" className='w-14 h-14 rounded' />
             <div className='flex flex-col w-1/2'>
-                <p className='font-bold truncate'>{props.title}</p>
-                <p className='text-white/50 truncate'>{props.user}</p>
+                <p className='font-bold truncate cursor-pointer'>{props.title}</p>
+                <p className='text-white/50 truncate cursor-pointer hover:text-white/80'>{props.user}</p>
             </div>
         </div>
     )

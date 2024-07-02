@@ -44,7 +44,7 @@ function RecentlyPlayedItems(props: RecentlyPlayedItem) {
     return (
         <div className='bg-white/5 rounded h-14 flex p-1 items-center gap-2 text-gray-200 hover:bg-white/10 cursor-pointer'>
             <img src={props.image} alt="placeholder" className='w-12 h-12' />
-            <p className='truncate'>{props.title}</p>
+            <p className='truncate cursor-pointer hover:text-white'>{props.title}</p>
         </div>
     )
 }
