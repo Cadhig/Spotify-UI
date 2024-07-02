@@ -16,9 +16,9 @@ export default function SideBar(props: any) {
 function HomeAndSearch(props: any) {
     return (
         <div className='text-white/90 font-bold bg-zinc-900 rounded-lg h-36 flex flex-col justify-evenly pl-4'>
-            <div className='flex flex-row items-center gap-3 hover:text-white cursor-pointer'>
+            <div className='flex flex-row items-center gap-3 hover:text-white cursor-pointer' onClick={() => props.setView('Home')}>
                 <House size={36} />
-                <button onClick={() => props.setView('Home')}>Home</button>
+                <button>Home</button>
             </div>
             <div className='flex flex-row items-center gap-3 hover:text-white cursor-pointer'>
                 <Search size={36} />

@@ -20,8 +20,8 @@ function Albums(props: Album) {
         <div className='bg-white/5 rounded flex flex-col min-w-52 min-h-60 items-center justify-center p-4 mb-2 hover:bg-white/10 cursor-pointer'>
             <img src={props.image} alt="placeholder" className='w-full h-full' />
             <div className='text-white w-full'>
-                <p className='font-bold'>{props.album}</p>
-                <p className='text-white/50'>{props.artist}</p>
+                <p className='font-bold truncate'>{props.album}</p>
+                <p className='text-white/50 truncate'>{props.artist}</p>
             </div>
         </div>
     )

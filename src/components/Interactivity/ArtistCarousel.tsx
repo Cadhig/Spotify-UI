@@ -6,7 +6,7 @@ export default function ArtistCarousel(props: any) {
         <div className='flex flex-col gap-3'>
             <h2 className='text-white font-bold text-2xl'>{props.header}</h2>
             <div className='flex overflow-auto gap-4'>
-                {props.contents.map((props, index) => {
+                {props.contents.map((props:any, index: number) => {
                     return <Artists key={index} {...props} />
                 })}
             </div>
@@ -22,7 +22,7 @@ function Artists(props: Artist) {
                 <img src={props.image} alt="placeholder" className='w-full h-full rounded-full' />
             </div>
             <div className='text-white w-full'>
-                <p className='font-bold'>{props.name}</p>
+                <p className='font-bold truncate'>{props.name}</p>
             </div>
         </div>
     )

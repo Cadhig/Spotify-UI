@@ -6,7 +6,7 @@ export interface Album {
 export const topAlbums: Album[] = [
     {
         image: 'src\\assets\\TheTorturedPoetsDepartment.jpg',
-        album: "The Tortured Poets ...",
+        album: "The Tortured Poets Department",
         artist: "Taylor Swift"
     },
     {
