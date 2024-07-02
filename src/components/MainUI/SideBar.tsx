@@ -1,8 +1,6 @@
 
-import React from 'react'
 import { House, Search, Library, Plus } from 'lucide-react'
 import { playlists, Playlists } from '../../data'
-import HomeView from './HomeView'
 
 export default function SideBar(props: any) {
     return (

@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { RecentlyPlayedItem, recentlyPlayedList, topAlbums, artists } from '../../data'
 import AlbumCarousel from '../Interactivity/AlbumCarousel'
 import PageSwitchButtons from '../Buttons/PageSwitchButtons'
