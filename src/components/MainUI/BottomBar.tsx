@@ -17,7 +17,7 @@ export default function BottomBar() {
 function PlayorPauseButton() {
     const [paused, setPaused] = React.useState(true)
     return (
-        <button onClick={() => setPaused(!paused)}>{paused === true ? <CirclePlay size={48} /> : <CirclePause size={48} />}</button>
+        <button onClick={() => setPaused(!paused)}>{paused === true ? <CirclePlay size={48} className='text-white/70 cursor-pointer hover:text-white/80' /> : <CirclePause size={48} className='text-white/70 cursor-pointer hover:text-white/80' />}</button>
     )
 }
 
@@ -26,11 +26,11 @@ function MusicActions() {
     return (
         <div className='w-1/2 flex flex-col justify-center items-center gap-1 h-full text-lg'>
             <div className='text-white flex gap-2 justify-center items-center h-full'>
-                <Shuffle size={16} />
-                <SkipBack size={32} />
+                <Shuffle size={16} className='text-white/50 cursor-pointer hover:text-white/80' />
+                <SkipBack size={32} className='text-white/50 cursor-pointer hover:text-white/80' />
                 <PlayorPauseButton />
-                <SkipForward size={32} />
-                <Repeat size={16} />
+                <SkipForward size={32} className='text-white/50 cursor-pointer hover:text-white/80' />
+                <Repeat size={16} className='text-white/50 cursor-pointer hover:text-white/80' />
             </div>
             <div id='MockBar' className='bg-white/50 w-1/2 h-1 rounded-full'>
             </div>
