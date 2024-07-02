@@ -1,5 +1,5 @@
 
-import { RecentlyPlayedItem, recentlyPlayedList, topAlbums, artists } from '../../data'
+import { RecentlyPlayedItem, recentlyPlayedList, topAlbums, artists, topSongs } from '../../data'
 import AlbumCarousel from '../Interactivity/AlbumCarousel'
 import PageSwitchButtons from '../Buttons/PageSwitchButtons'
 import ArtistCarousel from '../Interactivity/ArtistCarousel'
@@ -13,6 +13,7 @@ export default function HomeView() {
             <RecentlyPlayed />
             <TopAlbumsCarousel />
             <TopArtistsCarousel />
+            <TopSongsCarousel />
         </div>
     )
 }
@@ -53,6 +54,13 @@ function TopAlbumsCarousel() {
     return (
         <AlbumCarousel header={'Hot Today'} contents={topAlbums} />
 
+    )
+}
+
+function TopSongsCarousel() {
+
+    return (
+        <AlbumCarousel header={'Top Songs in the USA'} contents={topSongs} />
     )
 }
 

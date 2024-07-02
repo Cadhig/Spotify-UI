@@ -28,6 +28,17 @@ import MorganWallen from '../assets/MorganWallen.jpg'
 import JellyRoll from '../assets/JellyRoll.jpg'
 import KendrickLamar from '../assets/KendrickLamar.jpg'
 import BillieEilish from '../assets/BillieEilish.jpg'
+import IHadSomeHelp from '../assets/IHadSomeHelp.jpg'
+import ABarSong from '../assets/ABarSong.jpg'
+import NotLikeUs from '../assets/NotLikeUs.jpg'
+import Espresso from '../assets/Espresso.jpg'
+import Please from '../assets/PleasePleasePlease.jpg'
+import MillionDollarBaby from '../assets/MillionDollarBaby.jpg'
+import TooSweet from '../assets/TooSweet.jpg'
+import BeautifulThings from '../assets/BeautifulThings.jpg'
+import LoseControl from '../assets/LoseControl.jpg'
+import BirdsOfAFeather from '../assets/BirdsOfAFeather.jpg'
+
 export interface Album {
     image: string,
     album: string,
@@ -73,6 +84,59 @@ export const topAlbums: Album[] = [
         image: ZachBryan,
         album: "Zach Bryan",
         artist: "Zach Bryan"
+    }
+]
+
+export const topSongs: Album[] = [
+    {
+        image: IHadSomeHelp,
+        album: "I Had Some Help",
+        artist: "Post Malone feat. Morgan Wallen"
+    },
+    {
+        image: ABarSong,
+        album: "A Bar Song (Tipsy)",
+        artist: "Shaboozey"
+    },
+    {
+        image: NotLikeUs,
+        album: 'Not Like Us',
+        artist: "Kendrick Lamar"
+    },
+    {
+        image: Espresso,
+        album: "Espresso",
+        artist: "Sabrina Carpenter"
+    },
+    {
+        image: Please,
+        album: "Please Please Please",
+        artist: "Sabrina Carpenter"
+    },
+    {
+        image: MillionDollarBaby,
+        album: 'Million Dollar Baby',
+        artist: 'Tommy Richman'
+    },
+    {
+        image: TooSweet,
+        album: "Too Sweet",
+        artist: "Hozier"
+    },
+    {
+        image: BeautifulThings,
+        album: "Beautiful Things",
+        artist: "Benson Boone"
+    },
+    {
+        image: LoseControl,
+        album: "Lose Control",
+        artist: "Teddy Swims"
+    },
+    {
+        image: BirdsOfAFeather,
+        album: "Birds Of A Feather",
+        artist: "Billie Eilish"
     }
 ]
 
