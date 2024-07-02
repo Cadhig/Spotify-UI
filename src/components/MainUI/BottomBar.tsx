@@ -34,8 +34,8 @@ function MusicActions() {
             </div>
             <div className='h-1 w-full flex items-center justify-center text-white/50 text-xs gap-2'>
                 <p>2:54</p>
-                <div className="w-1/2 h-1 rounded bg-white/30">
-                    <div id='MockVol' className='bg-white/80 w-3/4 h-1 rounded-full'>
+                <div className="w-1/2 h-1 rounded bg-white/30 cursor-pointer">
+                    <div id='MockVol' className='bg-white/80 w-3/4 h-1 rounded-full hover:bg-green-700 cursor-pointer'>
                     </div>
                 </div>
                 <p>3:29</p>
@@ -63,7 +63,7 @@ function VolumeBar() {
         <div className='text-white flex items-center gap-3 w-1/4 justify-end'>
             <Volume2 />
             <div className="w-28 h-1 rounded bg-white/30">
-                <div id='MockVol' className='bg-white/80 w-16 h-1 rounded-full'>
+                <div id='MockVol' className='bg-white/80 w-16 h-1 rounded-full hover:bg-green-700'>
                 </div>
             </div>
         </div>
