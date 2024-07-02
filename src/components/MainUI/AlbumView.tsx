@@ -1,5 +1,5 @@
 import PageSwitchButtons from "../Buttons/PageSwitchButtons"
-import placeHolder from '../../assets/Placeholder.jpg'
+import Playlist from '../../assets/Playlist.jpg'
 import { PlayorPauseButton } from "./BottomBar"
 import { Shuffle } from "lucide-react"
 import { Songs, topSongs } from "../../data"
@@ -17,13 +17,13 @@ function PlaylistHeader() {
 
     return (
         <div className="text-white flex flex-row items-center gap-4">
-            <img src={placeHolder} alt="placeholder" className="h-52 w-52" />
+            <img src={Playlist} alt="placeholder" className="h-52 w-52 rounded" />
             <div className="flex flex-col gap-12">
-                <p className="text-white/50">Playlist</p>
-                <h2 className='text-white font-bold text-5xl cursor-pointer'>Playlist</h2>
+                <p className="text-white/50">Playlist / Album</p>
+                <h2 className='text-white font-bold text-5xl cursor-pointer'>Playlist / Album</h2>
                 <div className="flex flex-row gap-4">
-                    <p className="cursor-pointer hover:underline">Username</p>
-                    <p className="text-white/50">123 songs</p>
+                    <p className="cursor-pointer hover:underline">cadhig</p>
+                    <p className="text-white/50">342 songs</p>
                 </div>
             </div>
         </div>
@@ -42,7 +42,7 @@ function PlaylistSongs() {
             </div>
             <div className="flex text-white/50 gap-4">
                 <div className="flex gap-4 w-1/3">
-                    <p>#</p>
+                    <p className="ml-3">#</p>
                     <p>Title</p>
                 </div>
                 <p className="w-1/3">Album</p>
@@ -62,8 +62,8 @@ function PlaylistSongsList(props: Songs) {
     return (
         <div className="text-white flex gap-4 items-center hover:bg-white/10 cursor-pointer p-2 rounded">
             <div className="w-1/3 flex gap-4 items-center">
-                <div>
-                    <p>{props.number}</p>
+                <div className="w-5">
+                    <p className="text-white/50">{props.number}</p>
                 </div>
                 <div className="flex gap-4" >
                     <img src={props.image} alt="" className="w-12 h-12" />
