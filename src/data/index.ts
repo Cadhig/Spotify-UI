@@ -5,12 +5,12 @@ export interface Album {
 }
 export const topAlbums: Album[] = [
     {
-        image: 'src\\assets\\TheTorturedPoetsDepartment.jpg',
+        image: '\src\\assets\\TheTorturedPoetsDepartment.jpg',
         album: "The Tortured Poets Department",
         artist: "Taylor Swift"
     },
     {
-        image: 'src\\assets\\WeDontTrustYou.jpg',
+        image: '\src\\assets\\WeDontTrustYou.jpg',
         album: "We Dont Trust You",
         artist: "Future & Metro Boomin"
     },
