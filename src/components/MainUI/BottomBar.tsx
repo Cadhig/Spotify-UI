@@ -41,10 +41,10 @@ function CurrentSong() {
 
     return (
         <div className='flex justify-start items-center w-1/4'>
-            <img src="src\assets\Placeholder.jpg" alt="" className='w-16 h-14' />
+            <img src="src\assets\TheDeathOfPEaceOfMind.jpg" alt="" className='w-16 h-14' />
             <div className='ml-3 text-white'>
-                <p>Song Name</p>
-                <p className='text-white/50'>Artist</p>
+                <p>Like a Villain</p>
+                <p className='text-white/50'>Bad Omens</p>
             </div>
         </div>
     )

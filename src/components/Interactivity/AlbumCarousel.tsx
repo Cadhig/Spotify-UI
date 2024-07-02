@@ -6,7 +6,7 @@ export default function AlbumCarousel(props: any) {
         <div className='flex flex-col gap-3'>
             <h2 className='text-white font-bold text-2xl'>{props.header}</h2>
             <div className='flex overflow-auto gap-4'>
-                {props.contents.map((props, index) => {
+                {props.contents.map((props:any, index:number) => {
                     return <Albums key={index} {...props} />
                 })}
             </div>
